@@ -1,6 +1,6 @@
 {
   "name": "nabta",
-<<<<<<< HEAD
+ 
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -35,26 +35,6 @@
     "eslint-config-next": "15.5.3",
     "tailwindcss": "^4.1.13",
     "typescript": "^5"
-=======
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JIRVII/NABTA.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JIRVII/NABTA/issues"
-  },
-  "homepage": "https://github.com/JIRVII/NABTA#readme",
-  "dependencies": {
-    "react-router-dom": "^7.9.1"
->>>>>>> 9ba3645cdaeea08a67c64880016c52c89eeb18b4
-  }
 }
+}
+
