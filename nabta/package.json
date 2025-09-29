@@ -1,6 +1,5 @@
 {
   "name": "nabta",
-<<<<<<< HEAD
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,17 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@google/genai": "^1.20.0",
-    "@google/generative-ai": "^0.24.1",
     "autoprefixer": "^10.4.21",
     "axios": "^1.12.2",
     "firebase": "^12.2.1",
     "leaflet": "^1.9.4",
     "next": "^15.5.3",
-    "openai": "^5.23.0",
     "postcss": "^8.5.6",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-firebase-hooks": "^5.1.1",
     "react-leaflet": "^5.0.0",
     "react-router-dom": "^7.9.1"
@@ -35,26 +31,5 @@
     "eslint-config-next": "15.5.3",
     "tailwindcss": "^4.1.13",
     "typescript": "^5"
-=======
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JIRVII/NABTA.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JIRVII/NABTA/issues"
-  },
-  "homepage": "https://github.com/JIRVII/NABTA#readme",
-  "dependencies": {
-    "react-router-dom": "^7.9.1"
->>>>>>> 9ba3645cdaeea08a67c64880016c52c89eeb18b4
   }
 }
