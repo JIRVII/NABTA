@@ -1,8 +1,7 @@
- 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ... أي إعدادات أخرى لديك
   webpack: (config, { isServer }) => {
+    // هذا الكود يخبر Next.js بتجاهل تحميل حزم الخرائط على جانب الخادم (Server Side)
     if (isServer) {
       config.externals = [...config.externals, 'react-leaflet', 'leaflet'];
     }
