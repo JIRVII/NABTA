@@ -1,0 +1,11 @@
+var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/plantai/route.js")
+R.c("server/chunks/fdd63_next_b0670236._.js")
+R.c("server/chunks/fdd63_tr46_3a7c700d._.js")
+R.c("server/chunks/fdd63_google-auth-library_2c990121._.js")
+R.c("server/chunks/fdd63_ws_cb348cb3._.js")
+R.c("server/chunks/fdd63_@google_genai_dist_node_index_mjs_636d3838._.js")
+R.c("server/chunks/fdd63_b6f3136a._.js")
+R.c("server/chunks/[root-of-the-server]__4aadde74._.js")
+R.m("[project]/Documents/GitHub/NABTA/nabta/.next-internal/server/app/api/plantai/route/actions.js [app-rsc] (server actions loader, ecmascript)")
+R.m("[project]/Documents/GitHub/NABTA/nabta/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/Documents/GitHub/NABTA/nabta/src/app/api/plantai/route.js [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/Documents/GitHub/NABTA/nabta/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/Documents/GitHub/NABTA/nabta/src/app/api/plantai/route.js [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

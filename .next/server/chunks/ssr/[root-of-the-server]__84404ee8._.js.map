@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/%D9%8A%D8%A7%D9%85%D9%8A%D9%83%D8%B3/Documents/GitHub/NABTA/nabta/src/app/map/page.jsx"],"sourcesContent":["import React from \"react\";\r\n\r\nfunction MapPage() {\r\n  return (\r\n    <div style={{ padding: \"20px\", textAlign: \"center\" }}>\r\n      <h1 style={{ color: \"#2e7d32\" }}>🌱 خريطة المشاتل</h1>\r\n      <p>اعثر على أقرب مشتل إليك مع تقييمات وتعليقات من المستخدمين.</p>\r\n      \r\n      {/* هنا تدمجين Google Maps API */}\r\n      <div style={{ width: \"100%\", height: \"400px\", background: \"#e0e0e0\", borderRadius: \"12px\" }}>\r\n        <p style={{ paddingTop: \"180px\" }}>الخريطة تظهر هنا (Google Maps)</p>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default MapPage;\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEA,SAAS;IACP,qBACE,uRAAC;QAAI,OAAO;YAAE,SAAS;YAAQ,WAAW;QAAS;;0BACjD,uRAAC;gBAAG,OAAO;oBAAE,OAAO;gBAAU;0BAAG;;;;;;0BACjC,uRAAC;0BAAE;;;;;;0BAGH,uRAAC;gBAAI,OAAO;oBAAE,OAAO;oBAAQ,QAAQ;oBAAS,YAAY;oBAAW,cAAc;gBAAO;0BACxF,cAAA,uRAAC;oBAAE,OAAO;wBAAE,YAAY;oBAAQ;8BAAG;;;;;;;;;;;;;;;;;AAI3C;uCAEe","debugId":null}}]
+}

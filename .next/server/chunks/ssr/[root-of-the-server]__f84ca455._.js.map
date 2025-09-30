@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/%D9%8A%D8%A7%D9%85%D9%8A%D9%83%D8%B3/Documents/GitHub/NABTA/nabta/src/app/support/page.jsx"],"sourcesContent":[" export default function Support() {\r\n  return (\r\n    <div className=\"min-h-screen flex items-center justify-center bg-green-50\">\r\n      <h1 className=\"text-2xl font-bold\">💬 خدمة العملاء</h1>\r\n    </div>\r\n  );\r\n}"],"names":[],"mappings":";;;;;;AAAgB,SAAS;IACvB,qBACE,uRAAC;QAAI,WAAU;kBACb,cAAA,uRAAC;YAAG,WAAU;sBAAqB;;;;;;;;;;;AAGzC","debugId":null}}]
+}

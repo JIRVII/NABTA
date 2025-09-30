@@ -1,0 +1,26 @@
+{
+  "pages": {
+    "/_app": []
+  },
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [
+    "static/chunks/fdd63_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [
+    "static/development/_ssgManifest.js",
+    "static/development/_buildManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_4db12ace._.js",
+    "static/chunks/fdd63_next_dist_compiled_react-dom_6f321724._.js",
+    "static/chunks/fdd63_next_dist_compiled_next-devtools_index_bb02fe84.js",
+    "static/chunks/fdd63_next_dist_compiled_ea0bf29b._.js",
+    "static/chunks/fdd63_next_dist_client_6cc679fb._.js",
+    "static/chunks/fdd63_next_dist_bdfcc750._.js",
+    "static/chunks/fdd63_@swc_helpers_cjs_0a7c327c._.js",
+    "static/chunks/Documents_GitHub_NABTA_nabta_a0ff3932._.js",
+    "static/chunks/turbopack-Documents_GitHub_NABTA_nabta_1cced202._.js"
+  ],
+  "ampFirstPages": []
+}

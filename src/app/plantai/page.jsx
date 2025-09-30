@@ -1,143 +1,67 @@
 "use client";
 import { useState } from "react";
 
-export default function PlantAI() {
-  const [userMsg, setUserMsg] = useState(""); // تعريف المتغير
-  const [messages, setMessages] = useState([]);
-  const [loading, setLoading] = useState(false);
+function PlantAI() {
+  const [plant, setPlant] = useState(null);
 
-  // إرسال الرسالة للـ API
-  const sendMessage = async () => {
-    if (!userMsg.trim()) return;
-    setLoading(true);
-
-    // إضافة رسالة المستخدم للشات
-    setMessages((prev) => [...prev, { sender: "user", text: userMsg }]);
-
-    try {
-  const res = await fetch("/api/plantai", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ message: userMsg }),
-});
-
-      const data = await res.json();
-
-      // إضافة رد الذكاء
-      setMessages((prev) => [
-        ...prev,
-        { sender: "ai", text: data.reply || "ما قدرت أفهم سؤالك 🌱" },
-      ]);
-    } catch (error) {
-      setMessages((prev) => [
-        ...prev,
-        { sender: "ai", text: "صار خطأ، جرّب مره ثانية 🚨" },
-      ]);
-    }
-
-    setUserMsg(""); // مسح النص
-    setLoading(false);
-  };
-
-  // زر الكاميرا (يخلي المستخدم يختار صورة)
-  const openCamera = () => {
-    alert("📷 ميزة الكاميرا لسه تحتاج ربط بخاصية تحليل الصور.");
+  const handleDetect = () => {
+    // مثال تجريبي
+    setPlant({
+      name: "🌿 ريحان",
+      stores: ["مشتل الرياض", "مشتل القصيم"]
+    });
   };
 
   return (
     <div
       style={{
-        backgroundColor: "#f9f6f1", // بيج فاتح
-        color: "#2f4f2f", // أخضر غامق
-        fontFamily: "Arial, sans-serif",
         minHeight: "100vh",
-        padding: "20px",
+        background: "#f9f7f3",
+        padding: "30px",
+        textAlign: "center"
       }}
     >
-      <h1 style={{ textAlign: "center", color: "#2e7d32" }}>
-        🌱 خبير النبات الذكي
+      <h1 style={{ color: "#2e7d32", marginBottom: "20px", fontSize: "26px" }}>
+        🤖 خبير النبات
       </h1>
-
-      <div
+      <p style={{ color: "#4e342e", marginBottom: "20px" }}>
+        وجه الكاميرا على أي نبتة للتعرف عليها 🌱
+      </p>
+      <button
+        onClick={handleDetect}
         style={{
-          backgroundColor: "#ffffff",
-          border: "2px solid #c5e1a5",
+          padding: "12px 25px",
+          background: "linear-gradient(to right, #81c784, #388e3c)",
+          border: "none",
+          color: "white",
           borderRadius: "10px",
-          padding: "15px",
-          maxWidth: "600px",
-          margin: "20px auto",
-          height: "400px",
-          overflowY: "auto",
+          fontSize: "16px",
+          cursor: "pointer"
         }}
       >
-        {messages.map((msg, i) => (
-          <p
-            key={i}
-            style={{
-              textAlign: msg.sender === "user" ? "right" : "left",
-              color: msg.sender === "user" ? "#1b5e20" : "#33691e",
-              backgroundColor:
-                msg.sender === "user" ? "#e6ee9c" : "#c5e1a5",
-              padding: "10px",
-              borderRadius: "8px",
-              margin: "8px 0",
-              maxWidth: "80%",
-            }}
-          >
-            {msg.text}
-          </p>
-        ))}
-      </div>
+        📷 فتح الكاميرا
+      </button>
 
-      <div
-        style={{
-          display: "flex",
-          gap: "10px",
-          maxWidth: "600px",
-          margin: "auto",
-        }}
-      >
-        <input
-          type="text"
-          value={userMsg}
-          onChange={(e) => setUserMsg(e.target.value)}
-          placeholder="اكتب مشكلتك مع النبتة..."
+      {plant && (
+        <div
           style={{
-            flex: 1,
-            padding: "10px",
-            borderRadius: "8px",
-            border: "1px solid #c5e1a5",
-            fontSize: "16px",
-          }}
-        />
-        <button
-          onClick={sendMessage}
-          disabled={loading}
-          style={{
-            backgroundColor: "#2e7d32",
-            color: "#fff",
-            border: "none",
-            borderRadius: "8px",
-            padding: "10px 15px",
-            cursor: "pointer",
+            marginTop: "25px",
+            background: "#f5f0e6",
+            padding: "20px",
+            borderRadius: "15px",
+            maxWidth: "500px",
+            marginInline: "auto",
+            boxShadow: "0 4px 10px rgba(0,0,0,0.08)"
           }}
         >
-          {loading ? "..." : "إرسال"}
-        </button>
-        <button
-          onClick={openCamera}
-          style={{
-            backgroundColor: "#81c784",
-            color: "#fff",
-            border: "none",
-            borderRadius: "8px",
-            padding: "10px 15px",
-            cursor: "pointer",
-          }}
-        >
-          📷
-        </button>
-      </div>
+          <h2 style={{ color: "#1b5e20" }}>{plant.name}</h2>
+          <p style={{ color: "#4e342e" }}>
+            🏬 متاجر توفر هذه النبتة: {plant.stores.join("، ")}
+          </p>
+        </div>
+      )}
     </div>
   );
 }
+
+export default PlantAI;
