@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    appDir: true, // ضروري لأنك تستخدم هيكلة src/app
+  // ضروري لأنك تستخدم هيكلة src/app
   },
 };
 
